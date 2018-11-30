@@ -1,0 +1,18 @@
+<p>
+      {{title}} works! 
+</p>
+
+<div>
+
+<form [formGroup]="formLogin" (ngSubmit)="onSubmit(e)" novalidate>
+  <label>
+    <span>Email address</span>
+    <input
+      type="email"
+      placeholder="Your E-Mail"
+      required
+      formControlName="email">
+  </label>
+  <button type="submit">Sign up</button>
+</form>
+</div>
